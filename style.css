@@ -1,0 +1,225 @@
+
+/* * universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* navbar section */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}   
+.navbr ul li{
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 50px;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: rgb(243, 40, 5);
+    text-shadow: 3px 4px 5px  rgb(178, 190, 66);
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(173, 118, 224, 0.075);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url(https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+   /* z-index: -1; */
+    
+}
+
+.main{
+    border: 1px solid white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+.heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn{
+    color: rgb(67, 46, 85);
+    background-color: rgb(219, 20, 47);
+    padding: 10px 30px;
+    transition: .6s;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px rgb(22, 11, 11), 0 0 10px rgb(22, 11, 11),0 0 15px rgb(22, 11, 11);
+}
+
+/* about */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 400px;
+    height: 300px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+
+#intro h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* project */
+
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 94, 233);
+    align-items: center;
+    padding: 20px;
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+ 
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+    transform: scale(0.5s);
+}
+
+.gallery img:hover{
+    width: 380px;
+    transition: .6s;
+    box-shadow: 0 0 5px,0 0 10px,0 0 15px;
+}
+
+/* services */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 430px;
+    border: 1px solid blue;
+    margin: 14px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 15px;
+
+    background: linear-gradient(to top, rgb(118, 118, 247) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px blue;
+
+}
+
+.box img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: brown; */
+    background-color: rgb(76, 147, 240);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: blueviolet; */
+
+}
+
+.input{
+    padding:10px;
+    margin: 5px;
+}
+
+#send{  
+    padding: 10px;
+    margin: 5px;
+}
+
+#send:hover{
+    background-color: rgb(144, 53, 230);
+    color: bisque;
+}
